@@ -1,0 +1,19 @@
+<h1><%=@song.title.to_s%></h1>
+<ul>
+  <li>
+    Released? <%= @song.released.to_s %>
+  </li>
+  <li>
+    Release Year: <%= @song.release_year.to_s %>
+  </li>
+  <li>
+  Artist Name: <%= @song.artist_name.to_s %>
+  </li>
+  <li>
+  Genre: <%= @song.genre.to_s %>
+  </li>
+</ul>
+
+
+
+<%= link_to "Delete", @song, method: :delete %>
